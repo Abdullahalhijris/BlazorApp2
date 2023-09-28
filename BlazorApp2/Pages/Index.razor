@@ -1,0 +1,59 @@
+﻿@page "/"
+@using Syncfusion.Blazor.ProgressBar
+@using Syncfusion.Blazor.Calendars
+
+<PageTitle>Index</PageTitle>
+
+<h3>Hello, Abdullah!</h3>
+
+<style>
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-auto-flow: column;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 4 / 4;
+    }
+
+    .div2 {
+        grid-area: 1 / 4 / 4 / 7;
+    }
+
+    .div3 {
+        grid-area: 4 / 1 / 7 / 4;
+    }
+
+    .div4 {
+        grid-area: 4 / 4 / 7 / 7;
+    }
+    }
+    /* To specify color and font size  */
+    .e-calendar .e-header .e-title, .e-bigger.e-small .e-calendar .e-header .e-title {
+        color: black;
+        font-size: 20px;
+    }
+
+
+    
+
+
+</style>
+<div class="parent">
+
+<div class="div1">
+<SfProgressBar Type="ProgressType.Circular" Value="40" Minimum="0" Maximum="100" TrackThickness="8" ProgressThickness="8">
+    <h4>Until Graduation</h4>
+</SfProgressBar>
+</div>
+
+    <div class="div2">
+        <SfCalendar TValue="DateTime" ></SfCalendar>
+    </div>
+
+
+</div>
